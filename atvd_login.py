@@ -2,13 +2,13 @@ import os
 os.system("clear") # limpar o terminal
 
 #Solicitando dados  (entrada) 
+
+
 usuario = str(input("Digite sua usúario: "))  
 senha = str(input("Digite sua senha: "))  
 
-usuario: str
-senha: str 
-Josiel: str
-josielsantos123: str
+usuario: "Josiel"
+senha: "123"
 
 #Verificando (Processamento)
 
@@ -17,10 +17,11 @@ if usuario != Josiel:
 if usuario == Josiel:
     print("Acesso permitido")
 
-if senha != josielsantos123: 
+if usuario != 123: 
     print("Acesso negado")
-if senha == josielsantos123:
+if usuario == 123:
     print("Acesso permitido")
+
 
 
 
