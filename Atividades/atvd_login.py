@@ -7,20 +7,15 @@ os.system("clear") # limpar o terminal
 usuario = str(input("Digite sua usúario: "))  
 senha = str(input("Digite sua senha: "))  
 
-usuario: "Josiel"
-senha: "123"
+usuario_cadastrado = "Josiel"
+senha_cadastrada = "123"
 
 #Verificando (Processamento)
 
-if usuario != Josiel: 
-    print("Acesso negado")
-if usuario == Josiel:
-    print("Acesso permitido")
-
-if usuario != 123: 
-    print("Acesso negado")
-if usuario == 123:
-    print("Acesso permitido")
+if usuario_cadastrado == usuario  and senha_cadastrada == senha:
+    print("ACESSO PERMITIDO")
+else:
+    print("ACESSO NEGADO")
 
 
 
