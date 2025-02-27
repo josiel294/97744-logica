@@ -19,5 +19,3 @@ else:
 
 
 
-
-#exibir dados
