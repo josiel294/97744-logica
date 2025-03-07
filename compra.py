@@ -20,31 +20,24 @@ match forma_de_pagamento:
     case 1:
         desconto = (preco * 0.10) 
         valor_total = preco - desconto
+        print(f"Valor total do produto: {preco}")
+        print(f"Valor total do pagamento: {valor_total}")
     case 2:
         parcelas = int(input("Digite a quantidade de parcelas: "))
-        match parcelas:
-            case "2":
-                parcelass = parcelas / 2
-            case "3":
-                parcelass = parcelas / 3
-            case "4":
-                parcelass = parcelas / 4
-            case "5":
-                parcelass = parcelas / 5
-            case "6":
-                parcelass = parcelas / 6
-            case _:
-                print("opcao invalida")          
-    
+        if parcelas >= 1 and parcelas <= 6:
+            valor_da_parcela = preco / parcelas
+            print(f"\nValor do produto: R$ {preco}")
+            print(f"Forma de pagamento: à prazo")
+            print(f"Quantidade de parcelas: {parcelas}")
+            print(f"Valor por parcela: R$ {valor_da_parcela:.2f}")
+            print(f"Total à prazo: R$ {valor_da_parcela}")
+        else:
+            print("opcao invalida.")
     case _:
-        reaultado = 0 
-        print("prato não encontrado.")    
-        print("tente com outro prato")
+         print("opcao invalida")          
+    
+
 
 #exibir
 
-print(f"Valor escolhido: {preco}")
-print(f"Valor total do desconto: R${desconto: .2f}")
-print(f"Valor total: R${valor_total or parcelass: .2f}")
-print(f"Valor total de parcelas: {parcelas}")
 
