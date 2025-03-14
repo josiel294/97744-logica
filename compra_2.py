@@ -25,8 +25,11 @@ match forma_de_pagamento:
         match parcelas:
             case "2":
                 parcelass = parcelas / 2
-            case "3":   
-    
+            case "3":
+                parcelass = parcelas / 2  
+
+            case _:
+                print("opcao invalida")    
     case _:
         print("opcao invalida")
         
