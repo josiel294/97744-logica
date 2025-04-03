@@ -1,10 +1,13 @@
 import os
 os.system("cls || clear")
+import time
 
-# Solicitar ao usuário um número
-numero = int(input("Digite um número para ver sua tabuada: "))
 
-# Exibir a tabuada do número
-print(f"\nTabuada do {numero}:")
-for i in range(1, 11):  # Vai de 1 até 10
-    print(f"{numero} x {i} = {numero * i}")
+numero = int(input("Digite um número para ver a tabuada: "))
+
+# Exibe a tabuada de 1 a 10
+print(f"\nTabuada de {numero}:")
+
+for i in range(1, 11):
+   print(f"{numero} x {i} = {numero * i}")
+   time.sleep(1)
