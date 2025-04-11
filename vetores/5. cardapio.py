@@ -51,6 +51,4 @@ print(f"Valor total: {valor_total: .2f}")
 
 
 
-        
-
-
+    
