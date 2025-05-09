@@ -12,12 +12,12 @@ class Endereco:
 @dataclass
 class Pessoa:
     nome: str
-    email: str
+    email: str  
     endereco: Endereco
 
     def exibir_dados(self):
         print(f"Nome: {self.nome}")
-        print(f"Idade: {self.email}")
+        print(f"Email: {self.email}")
         print(f"Endereço: {self.endereco.logradouro}, Número: {self.endereco.numero}, Cidade: {self.endereco.cidade}")
 
 endereco1 = Endereco("Rua A", 23, "Salvador")
