@@ -57,17 +57,17 @@ for cliente in lista_cliente:
     print(f"Endereço: {cliente.endereco}")   
     print()
 
-nome_arquivo_func = "dados_funcionario.txt"
-nome_arquivo_cli = "dados_cliente.txt"
+nome_arquivo_func = "dados_funcionario.csv"
+nome_arquivo_cli = "dados_cliente.csv"
 
 print("= Salvando os dados dos arquivos =")
 
 # 'w' -> escrita/salvar/sobrescrever
-with open(nome_arquivo_func, "w") as arquivo:
+with open(nome_arquivo_func, "a") as arquivo:
     for funcionario in lista_funcionario:
         arquivo.write(f"{funcionario.nome}, {funcionario.data_admissao}, {funcionario.matricula} e {funcionario.endereco}\n")
 
-with open(nome_arquivo_cli, "w") as arquivo:
+with open(nome_arquivo_cli, "a") as arquivo:
     for cliente in lista_cliente:
         arquivo.write(f"{cliente.nome}, {cliente.data_nascimento}, {cliente.endereco}\n")
 
