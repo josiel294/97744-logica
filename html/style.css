@@ -1,0 +1,62 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+/* body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3e0549f3;
+    color: #fcfcfc;
+    padding: 40px;
+    background-image: url('https://wallpapers.com/images/high/footballer-cristiano-ronaldo-hd-4k-fbnsk5rqwtahtybd.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+img{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+
+h1 {
+    color: #d3d4d6;
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+ul {
+    border: 1px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+ol{
+    border: 1px;
+    padding: 10px;
+    margin-top: 10px;
+}
