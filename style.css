@@ -1,0 +1,150 @@
+/* Importação da fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Inter', sans-serif; /* Usa a fonte Inter */
+    margin: 0;
+    padding: 20px; /* Adiciona um padding para espaçamento nas bordas */
+    background-color: #f0f2f5; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha o conteúdo ao topo verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+/* Estilos para o container principal da aplicação */
+.container {
+    background-color: #ffffff; /* Fundo branco para o card */
+    padding: 35px; /* Espaçamento interno */
+    border-radius: 15px; /* Cantos arredondados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Largura total */
+    max-width: 500px; /* Largura máxima para evitar que fique muito grande em telas largas */
+    margin-top: 50px; /* Margem superior para afastar do topo */
+}
+
+/* Estilos para o título principal */
+h1 {
+    color: #333; /* Cor do texto mais escura */
+    font-size: 2.5em; /* Tamanho da fonte maior */
+    margin-bottom: 25px; /* Espaçamento abaixo do título */
+    font-weight: 700; /* Peso da fonte mais forte */
+}
+
+/* Estilos para a label */
+label {
+    display: block; /* Garante que a label ocupe sua própria linha */
+    margin-bottom: 10px; /* Espaçamento abaixo da label */
+    color: #555; /* Cor do texto da label */
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilos para o campo de entrada de número */
+input[type="number"] {
+    width: calc(100% - 40px); /* Largura total menos padding */
+    padding: 12px 20px; /* Espaçamento interno */
+    margin-bottom: 25px; /* Espaçamento abaixo do input */
+    border: 2px solid #ddd; /* Borda suave */
+    border-radius: 8px; /* Cantos arredondados */
+    font-size: 1.1em; /* Tamanho da fonte */
+    color: #333; /* Cor do texto digitado */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao focar */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+input[type="number"]:focus {
+    border-color: #007bff; /* Borda azul ao focar */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Sombra suave ao focar */
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    padding: 12px 25px; /* Espaçamento interno */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Cantos arredondados */
+    font-size: 1.1em; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    cursor: pointer; /* Mãosinha ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transições suaves */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Sombra no botão */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de "levantar" ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4); /* Sombra mais intensa */
+}
+
+button:active {
+    transform: translateY(0); /* Efeito de "pressionar" ao clicar */
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2); /* Sombra mais sutil */
+}
+
+/* Estilos para a div de resultados da tabuada */
+#resultadoTabuada {
+    margin-top: 30px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f8f9fa; /* Fundo mais claro para a área de resultados */
+    border: 1px solid #e9ecef; /* Borda sutil */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: left; /* Alinha o texto à esquerda */
+    min-height: 100px; /* Altura mínima para a área de resultados */
+    max-height: 400px; /* Altura máxima para rolagem se tiver muitos resultados */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical se o conteúdo exceder */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+}
+
+#resultadoTabuada h2 {
+    color: #007bff; /* Cor azul para o título da tabuada */
+    font-size: 1.8em; /* Tamanho do título da tabuada */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título da tabuada */
+    border-bottom: 1px solid #e9ecef; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaçamento da linha */
+}
+
+#resultadoTabuada p {
+    margin: 8px 0; /* Espaçamento entre os parágrafos */
+    font-size: 1.1em; /* Tamanho da fonte dos resultados */
+    padding-left: 10px; /* Pequeno recuo para os resultados */
+}
+
+/* Estilos para a mensagem de erro (usada no JavaScript) */
+#resultadoTabuada p[style*="color: red;"] {
+    font-weight: 600; /* Negrito para a mensagem de erro */
+    text-align: center; /* Centraliza a mensagem de erro */
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px; /* Menos padding em telas pequenas */
+        margin-top: 20px; /* Menos margem superior */
+    }
+
+    h1 {
+        font-size: 2em; /* Título um pouco menor */
+    }
+
+    input[type="number"],
+    button {
+        font-size: 1em; /* Fontes um pouco menores */
+        padding: 10px 20px; /* Padding menor */
+    }
+
+    #resultadoTabuada h2 {
+        font-size: 1.5em; /* Título da tabuada menor */
+    }
+
+    #resultadoTabuada p {
+        font-size: 1em; /* Resultados menores */
+    }
+}
